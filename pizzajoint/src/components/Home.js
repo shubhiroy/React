@@ -7,6 +7,9 @@ const Home = () => {
     <motion.div className="home container"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
+    // Default type here is tween
+    // duration can only be used when type is tween
+    transition={{ delay: 1.5, duration: 1.5 }}
     >
       <h2>
         Welcome to Pizza Joint

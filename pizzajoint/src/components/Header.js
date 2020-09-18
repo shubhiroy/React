@@ -19,6 +19,9 @@ const Header = () => {
         <motion.div className="title"
         initial={{ y: -250 }}
         animate={{y: -10 }}
+        // Default type is spring but if anytihing else like stiffness is mentioned then we have to declare the type. 
+        // stiffness property can only be used for spring type
+        transition={{ delay: 0.2, type: 'spring', stiffness: 120}} 
         >
           <h1>Pizza Joint</h1>
         </motion.div>
